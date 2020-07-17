@@ -1,0 +1,41 @@
+<html>
+    <head> 
+        <link rel="stylesheet" href="s2.css">
+    </head>
+<body >
+     
+ 
+    <br>
+    <img src="8.png" class="logo">
+    <form method="GET" class="button"  align="center" >
+    <div>
+        <button  type="sumbit" title="forwards"  name="F" class="but4">FORWARDS</button>
+  
+    <div>
+    <button type="sumbit"   name="L" class="but2">LEFT</button>
+    <button  type="sumbit"  name="S" class="but1">STOP</button> 
+    <button  type="sumbit"  name="R" class="but3">RIGHT</button>
+        </div>
+    
+    <button  type="sumbit"  name="B" class="but5">BACKWARDS</button>
+    
+    </div>
+    <br>
+    
+    </form>
+<script>
+  window.watsonAssistantChatOptions = {
+      integrationID: "31ee21ad-365e-4541-a3bb-30a078920074", // The ID of this integration.
+      region: "eu-gb", // The region your integration is hosted in.
+      serviceInstanceID: "a7ac0c76-abe8-4197-bd90-165e980d52ab", // The ID of your service instance.
+      onLoad: function(instance) { instance.render(); }
+    };
+  setTimeout(function(){
+    const t=document.createElement('script');
+    t.src="https://web-chat.global.assistant.watson.appdomain.cloud/loadWatsonAssistantChat.js";
+    document.head.appendChild(t);
+  });
+</script>
+    </body>
+  
+</html>
